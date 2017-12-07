@@ -1,0 +1,22 @@
+{
+  "name": "jov",
+  "version": "0.0.0",
+  "description": "JavaScript Object Validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oenstrom/jov.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Olof Enström",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oenstrom/jov/issues"
+  },
+  "homepage": "https://github.com/oenstrom/jov#readme"
+}
