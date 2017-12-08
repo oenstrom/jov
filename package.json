@@ -1,22 +1,36 @@
 {
-  "name": "jov",
-  "version": "0.0.0",
-  "description": "JavaScript Object Validator",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oenstrom/jov.git"
-  },
-  "keywords": [
-    "javascript"
-  ],
-  "author": "Olof Enström",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/oenstrom/jov/issues"
-  },
-  "homepage": "https://github.com/oenstrom/jov#readme"
+    "name": "jov",
+    "version": "0.0.0",
+    "description": "JavaScript Object Validator",
+    "main": "index.js",
+    "scripts": {
+        "eslint": "eslint .; exit 0",
+        "jest": "jest",
+        "coverage": "jest --coverage",
+        "test": "jest",
+        "posttest": "npm run eslint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oenstrom/jov.git"
+    },
+    "keywords": [
+        "javascript",
+        "objects",
+        "validation"
+    ],
+    "author": "Olof Enström",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/oenstrom/jov/issues"
+    },
+    "homepage": "https://github.com/oenstrom/jov#readme",
+    "devDependencies": {
+        "eslint": "^4.12.1",
+        "jest": "^21.2.1"
+    },
+    "jest": {
+        "verbose": true,
+        "collectCoverageFrom": ["lib/*.js"]
+    }
 }
