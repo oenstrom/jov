@@ -1,6 +1,7 @@
 # JOV
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/oenstrom/jov/blob/master/LICENSE)
+[![status](https://img.shields.io/badge/status-unusable-orange.svg)](https://github.com/oenstrom/jov#status)
 
 JOV is a JavaScript module for validating JavaScript objects.
 
@@ -18,8 +19,18 @@ $ npm install --save jov
 
 ```js
 const jov = require("jov");
+
+const schema = { username: new jov.string().required() };
+const data = { username: "oenstrom" };
+
+jov.validate(data, schema);
 ```
 More info coming soon.
+
+
+## Status
+
+This module is in it's very early stages of development. I suggest not using it yet.
 
 
 ## License
