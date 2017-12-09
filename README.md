@@ -17,15 +17,26 @@ $ npm install --save jov
 
 ## Usage
 
-```js
+```javascript
 const jov = require("jov");
 
-const schema = { username: new jov.string().required() };
+const schema = { username: new jov.string(true).required().min(3) };
 const data = { username: "oenstrom" };
 
 jov.validate(data, schema);
 ```
 More info coming soon.
+
+
+## API
+
+### `JString(strict)`
+
+- `.required()`
+- `.min(minValue)`
+- `.max(maxValue)`
+- `.email()`
+- `.alphanum()`
 
 
 ## Status
