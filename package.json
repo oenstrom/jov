@@ -1,6 +1,6 @@
 {
     "name": "jov",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "JavaScript Object Validator",
     "main": "index.js",
     "scripts": {
@@ -31,6 +31,7 @@
     },
     "jest": {
         "verbose": true,
-        "collectCoverageFrom": ["lib/*.js"]
+        "testMatch": ["**/test/**/*.test.js"],
+        "collectCoverageFrom": ["lib/**/*.js"]
     }
 }

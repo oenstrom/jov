@@ -1,0 +1,12 @@
+filter:
+    excluded_paths:
+        - "**/test/**"
+        - "**/*.min.js"
+build:
+    tests:
+        override:
+            -
+                command: 'npm run coverage'
+                coverage:
+                    file: 'coverage/clover.xml'
+                    format: 'clover'
