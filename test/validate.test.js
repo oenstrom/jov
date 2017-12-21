@@ -34,3 +34,17 @@ test("test validate using type validate", () => {
     );
     expect(validate(data2, schema)).toBeNull();
 });
+
+test("test multiple fields", () => {
+    const schema = {
+        username: new JString().min(3).max(3),
+        password: new JString().min(6).max(100)
+    };
+    const data = { password: "test" };
+
+    expect(validate(data, schema)).toEqual({ error: {
+        type: "JString:min",
+        field: "password",
+        message: "'password' has a minimum required length of '6'."
+    }});
+});
