@@ -1,6 +1,6 @@
 "use strict";
-const validate = require("../lib/validate");
-const JString = require("../lib/types/string");
+const validate = require("../src/validate");
+const JString = require("../src/types/string");
 
 test("test validate not required", () => {
     const data = { "username": "oenstrom" };

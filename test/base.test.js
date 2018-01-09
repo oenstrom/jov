@@ -1,5 +1,5 @@
 "use strict";
-const Base = require("../lib/types/base");
+const Base = require("../src/types/base");
 
 test("test instantiation of Base", () => {
     const string = new Base();

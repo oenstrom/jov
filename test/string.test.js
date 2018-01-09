@@ -1,5 +1,5 @@
 "use strict";
-const JString = require("../lib/types/string");
+const JString = require("../src/types/string");
 
 test("test instantiation of JString", () => {
     const string = new JString();
